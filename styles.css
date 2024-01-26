@@ -42,6 +42,8 @@
   }
 
   body {
+    max-width: 740px;
+    margin-inline: auto; 
     background-color: var(--eggshell);
     font-family: var(--font-paragraph);
     font-size: var(--font-size-paragraph);
@@ -55,15 +57,15 @@
   }
 
   .container {
-    margin: 0 auto;
-    margin: 5rem 22rem; 
-    padding: 2.5rem 0;
+    /* margin: 0 auto; */
+    padding: 2.5rem 0;                                    /* Top and bottom padding */
+    margin: 10rem 0;                                      /* Top and bottom margin -- For separation */
     background-color: var(--white);
     border-radius: 1rem;
   }
 
   .omelette-image {
-    margin-top: 2.5rem;
+    /* margin-top: 2.5rem; */
     margin: 0 auto;
     width: 660px;
     height: 300x;
@@ -158,13 +160,15 @@
 .horizontal-line::before {
     border: 1px solid var(--light-grey);
 }
-
 */
+
+.list {
+  list-style-position: inside;
+}
 
 .list-item {
     /* display: grid;                           /* Also, I tried to have a grid layout. No luck with that 
     grid-template-columns: 1fr auto;  */
-   
     gap: 1rem;
     line-height: 1.5rem;
   }
